@@ -7,10 +7,10 @@
   ],
   "author": "dannyob(danny@spesh.com)",
   "website": "https://github.com/dannyob/Capslock/",
-  "json_url": "https://raw.githubusercontent.com/dannyob/Capslock/master/mac_v3/capslock.yml",
-  "import_url": "karabiner://karabiner/assets/complex_modifications/import?url=https://raw.githubusercontent.com/dannyob/Capslock/master/mac_v3/capslock.yml",
+  "json_url": "https://raw.githubusercontent.com/dannyob/Capslock/master/mac_v3/capslock.json",
+  "import_url": "karabiner://karabiner/assets/complex_modifications/import?url=https://raw.githubusercontent.com/dannyob/Capslock/master/mac_v3/capslock.json",
   "gallery_url": "https://ke-complex-modifications.pqrs.org/#emulation-modes",
-  "repo": "https://github.com/dannyob/Capslock",
+  "repo": "https://github.com/dannyob/Capslock/",
   "rules": [
     {
       "description": "CapsLock to Hyper",
@@ -113,6 +113,131 @@
                 "left_control",
                 "left_command"
               ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "Danny Navigation",
+      "manipulators": [
+        {
+          "description": "a = open Brave",
+          "type": "basic",
+          "from": {
+            "key_code": "a",
+            "modifiers": {
+              "mandatory": [
+                "right_command",
+                "right_control",
+                "right_shift",
+                "right_option"
+              ]
+            }
+          },
+          "to": [
+            {
+              "shell_command": "open -a 'Brave Browser'"
+            }
+          ]
+        },
+        {
+          "description": "s = open Emacs",
+          "type": "basic",
+          "from": {
+            "key_code": "s",
+            "modifiers": {
+              "mandatory": [
+                "right_command",
+                "right_control",
+                "right_shift",
+                "right_option"
+              ]
+            }
+          },
+          "to": [
+            {
+              "shell_command": "open -a 'Emacs'"
+            }
+          ]
+        },
+        {
+          "description": "d = open terminal",
+          "type": "basic",
+          "from": {
+            "key_code": "d",
+            "modifiers": {
+              "mandatory": [
+                "right_command",
+                "right_control",
+                "right_shift",
+                "right_option"
+              ]
+            }
+          },
+          "to": [
+            {
+              "shell_command": "open -a \"Kitty\""
+            }
+          ]
+        },
+        {
+          "description": "f = Superhuman ",
+          "type": "basic",
+          "from": {
+            "key_code": "f",
+            "modifiers": {
+              "mandatory": [
+                "right_command",
+                "right_control",
+                "right_shift",
+                "right_option"
+              ]
+            }
+          },
+          "to": [
+            {
+              "shell_command": "open -a 'Superhuman'"
+            }
+          ]
+        },
+        {
+          "description": "g = Slack",
+          "type": "basic",
+          "from": {
+            "key_code": "g",
+            "modifiers": {
+              "mandatory": [
+                "right_command",
+                "right_control",
+                "right_shift",
+                "right_option"
+              ]
+            }
+          },
+          "to": [
+            {
+              "shell_command": "open -a 'Slack'"
+            }
+          ]
+        },
+        {
+          "description": "p = spotlight",
+          "type": "basic",
+          "from": {
+            "key_code": "p",
+            "modifiers": {
+              "mandatory": [
+                "right_command",
+                "right_control",
+                "right_shift",
+                "right_option"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "f4"
             }
           ]
         }
@@ -1819,26 +1944,6 @@
               "mouse_key": {
                 "horizontal_wheel": 128
               }
-            }
-          ]
-        },
-        {
-          "description": " p = spotlight",
-          "type": "basic",
-          "from": {
-            "key_code": "p",
-            "modifiers": {
-              "mandatory": [
-                "right_command",
-                "right_control",
-                "right_shift",
-                "right_option"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "f4"
             }
           ]
         },
@@ -4675,26 +4780,6 @@
           ]
         },
         {
-          "description": "a = open Browser",
-          "type": "basic",
-          "from": {
-            "key_code": "a",
-            "modifiers": {
-              "mandatory": [
-                "right_command",
-                "right_control",
-                "right_shift",
-                "right_option"
-              ]
-            }
-          },
-          "to": [
-            {
-              "shell_command": "open -a 'Brave Browser'"
-            }
-          ]
-        },
-        {
           "description": "control + s = alter app-win rev",
           "type": "basic",
           "from": {
@@ -4765,26 +4850,6 @@
                 "left_control",
                 "left_shift"
               ]
-            }
-          ]
-        },
-        {
-          "description": "s = open Emacs",
-          "type": "basic",
-          "from": {
-            "key_code": "s",
-            "modifiers": {
-              "mandatory": [
-                "right_command",
-                "right_control",
-                "right_shift",
-                "right_option"
-              ]
-            }
-          },
-          "to": [
-            {
-              "shell_command": "open -a 'Emacs'"
             }
           ]
         }
@@ -5084,26 +5149,6 @@
           ]
         },
         {
-          "description": "f = Superhuman ",
-          "type": "basic",
-          "from": {
-            "key_code": "f",
-            "modifiers": {
-              "mandatory": [
-                "right_command",
-                "right_control",
-                "right_shift",
-                "right_option"
-              ]
-            }
-          },
-          "to": [
-            {
-              "shell_command": "open -a 'Superhuman'"
-            }
-          ]
-        },
-        {
           "description": "command + g = Chrome",
           "type": "basic",
           "from": {
@@ -5144,26 +5189,6 @@
               "shell_command": "open -a Calendar"
             }
           ]
-        },
-        {
-          "description": "g = Slack",
-          "type": "basic",
-          "from": {
-            "key_code": "g",
-            "modifiers": {
-              "mandatory": [
-                "right_command",
-                "right_control",
-                "right_shift",
-                "right_option"
-              ]
-            }
-          },
-          "to": [
-            {
-              "shell_command": "open -a 'Slack'"
-            }
-          ]
         }
       ]
     },
@@ -5192,26 +5217,6 @@
                 "left_control",
                 "left_command"
               ]
-            }
-          ]
-        },
-        {
-          "description": "d = open terminal",
-          "type": "basic",
-          "from": {
-            "key_code": "d",
-            "modifiers": {
-              "mandatory": [
-                "right_command",
-                "right_control",
-                "right_shift",
-                "right_option"
-              ]
-            }
-          },
-          "to": [
-            {
-              "shell_command": "open -a \"Kitty\""
             }
           ]
         },
