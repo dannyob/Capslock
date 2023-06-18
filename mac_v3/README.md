@@ -1,5 +1,6 @@
 # Capslock Enhancement (mac v3) 
 
+(This has been adapted by Danny O'Brien, danny@spesh.com . Thanks to everyone who built it!)
 
 
 ### MacOS Installation

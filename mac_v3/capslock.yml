@@ -73,11 +73,22 @@ rules:
         from: { key_code: f, modifiers: { mandatory: [ right_command,right_control,right_shift,right_option ] } }
         to: [ { shell_command: open -a 'Superhuman' } ]
 
-      - description: 'g = Slack'
+      - description: 'g = Superhuman from Slack'
+        type: basic
+        from: { key_code: g, modifiers: { mandatory: [ right_command,right_control,right_shift,right_option ] } }
+        to: [ { shell_command: open -a 'Superhuman' } ]
+        conditions:  [ { type: "frontmost_application_if", bundle_identifiers: [ "^com.\\.tinyspeck\\.slackmacgap$" ] } ]
+
+      - description: 'g = Slack from Superhuman'
+        type: basic
+        from: { key_code: g, modifiers: { mandatory: [ right_command,right_control,right_shift,right_option ] } }
+        to: [ { shell_command: open -a 'Superhuman' } ]
+        conditions:  [ { type: "frontmost_application_if", bundle_identifiers: [ "^com.\\.superhuman\\.electron$" ] } ]
+
+      - description: 'g = Slack by default'
         type: basic
         from: { key_code: g, modifiers: { mandatory: [ right_command,right_control,right_shift,right_option ] } }
         to: [ { shell_command: open -a 'Slack' } ]
-
 
       # normal: ( p ) Spotlight
       - description: 'p = spotlight'
